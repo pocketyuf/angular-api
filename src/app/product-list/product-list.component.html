@@ -1,0 +1,13 @@
+<h1>Product List</h1>
+<mat-list class="example-list-wrapping">
+    <ul>
+      <li *ngFor="let product of products">
+        <mat-list-item lines="3">
+          <span matListItemTitle>{{ product.title }} - {{ product.price | currency }}</span>
+          <span>{{ product.description }}</span>
+        </mat-list-item>
+      </li>
+  </ul>
+</mat-list>
+
+
